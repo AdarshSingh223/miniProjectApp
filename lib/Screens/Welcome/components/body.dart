@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:sexylogin/Screens/Login/login_screen.dart';
 import 'package:sexylogin/Screens/Welcome/components/background.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:sexylogin/Screens/Welcome/components/rounded_button.dart';
+import 'package:sexylogin/components/rounded_button.dart';
 import 'package:sexylogin/constraints.dart';
 
 class Body extends StatelessWidget {
