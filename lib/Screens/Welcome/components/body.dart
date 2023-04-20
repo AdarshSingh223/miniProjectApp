@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sexylogin/Screens/About/about_scree.dart';
 import 'package:sexylogin/Screens/Login/login_screen.dart';
 import 'package:sexylogin/Screens/Welcome/components/background.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -45,6 +46,32 @@ class Body extends StatelessWidget {
                 textColor: Colors.black,
                 press : () {}
               ),
+              Row(
+                children: [
+                  TextButton(
+                    onPressed: () {
+                      Navigator.of(context).push(MaterialPageRoute(builder: (context) => AboutScreen()));
+                    }, 
+                    child: Row(
+                      children: [
+                        RichText(
+                          text: TextSpan(
+                            children: [
+                              WidgetSpan(
+                                child: Padding(
+                                  padding: const EdgeInsets.symmetric(horizontal: 0.0),
+                                  child: Icon(Icons.info, color: kPrimaryColor,size: 30,),                                  
+                                )
+                              )
+                            ]
+                          )
+
+                        )
+                      ],
+                    ) 
+                  )
+                ],
+              )
             ],
           ),
         ],
