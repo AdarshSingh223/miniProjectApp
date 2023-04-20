@@ -16,10 +16,6 @@ class Body extends StatelessWidget {
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              const Text(
-                "WELCOME TO EDU",
-                style: TextStyle(fontWeight: FontWeight.bold),
-              ),
               SizedBox(
                 height: size.height * 0.03,
               ),
