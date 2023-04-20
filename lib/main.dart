@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sexylogin/Screens/Welcome/welcome_screen.dart';
+import 'package:sexylogin/Screens/sign%20up/components/signup_screen.dart';
 import 'package:sexylogin/constraints.dart';
 
 void main() {
@@ -20,6 +21,9 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: Colors.white
       ),
       home: WelcomeScreen(),
+      routes: {
+        'login_signup' :(context) => signUpScreen()
+      },
     );
   }
 }

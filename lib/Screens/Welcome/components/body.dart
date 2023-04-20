@@ -3,6 +3,7 @@ import 'package:sexylogin/Screens/About/about_scree.dart';
 import 'package:sexylogin/Screens/Login/login_screen.dart';
 import 'package:sexylogin/Screens/Welcome/components/background.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:sexylogin/Screens/sign%20up/components/signup_screen.dart';
 import 'package:sexylogin/components/rounded_button.dart';
 import 'package:sexylogin/constraints.dart';
 
@@ -41,10 +42,14 @@ class Body extends StatelessWidget {
                 }
               ),
               RoundedButton(
-                text: "SignUp",
+                text: "Sign Up",
                 color: kPrimaryLightColor,
                 textColor: Colors.black,
-                press : () {}
+                press : () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) => signUpScreen()));
+                }
               ),
               Row(
                 children: [
@@ -77,7 +82,6 @@ class Body extends StatelessWidget {
         ],
       ),
     );
-
   }
 }
 

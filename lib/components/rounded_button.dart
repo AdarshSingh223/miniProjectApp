@@ -5,7 +5,7 @@ import 'package:sexylogin/constraints.dart';
 class RoundedButton extends StatelessWidget {
   final String text;
   final Color color, textColor;
-  final Function()? press;
+  final VoidCallback press;
 
   const RoundedButton({
     super.key, 
