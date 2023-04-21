@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:sexylogin/Screens/Login/components/background.dart';
+import 'package:sexylogin/Screens/sign%20up/components/signup_screen.dart';
 import 'package:sexylogin/components/already_have_an_account_check.dart';
 import 'package:sexylogin/components/rounded_button.dart';
 import 'package:sexylogin/constraints.dart';
@@ -53,8 +54,9 @@ class Body extends StatelessWidget {
             ),
             SizedBox(height: size.height * 0.03),
             AlreadyHaveAnAccountCheck(
+              login: true,
               press: () {
-      
+                Navigator.of(context).push(MaterialPageRoute(builder: (context) => signUpScreen()));
               }
             )
           ]

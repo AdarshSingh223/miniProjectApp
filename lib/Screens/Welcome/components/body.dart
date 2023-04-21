@@ -21,9 +21,13 @@ class Body extends StatelessWidget {
               SizedBox(
                 height: size.height * 0.03,
               ),
-              SvgPicture.asset(
-                "assets/icons/chat.svg",
-                height: size.height * 0.45,
+              Container(
+                width: 300,
+                height: 231,
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(75),
+                  child: Image.asset("assets/GIFs/car.gif"),
+                ),
               ),
               SizedBox(
                 height: size.height * 0.05,
@@ -84,6 +88,7 @@ class Body extends StatelessWidget {
     );
   }
 }
+
 
 
 
