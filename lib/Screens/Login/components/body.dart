@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:sexylogin/Screens/DataPage/data_page.dart';
+import 'package:sexylogin/Screens/Login/authentication.dart';
 import 'package:sexylogin/Screens/Login/components/background.dart';
 import 'package:sexylogin/Screens/sign%20up/components/signup_screen.dart';
 import 'package:sexylogin/components/already_have_an_account_check.dart';
@@ -12,9 +14,12 @@ import '../../../components/rounded_password_field.dart';
 
 
 class Body extends StatelessWidget {
-  const Body({
+  Body({
     super.key,
   });
+
+  TextEditingController _email = TextEditingController();
+  TextEditingController _password = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -41,15 +46,23 @@ class Body extends StatelessWidget {
               onChanged: (
                 value
               ) {},
+              textEditingController: _email,
             ),
             RoundedPasswordField(
               onChanged: (
                 value
               ) {},
+              textEditingController: _password,
             ),
             RoundedButton(
               text: "LOGIN",
-              press: () {},
+              press: () {
+                print(_email.text);
+                print(_password.text);
+                if(autheniticate(_email, _password)) {
+                  Navigator.of(context).push(MaterialPageRoute(builder: (context) => DataPage()));
+                }
+              },
               color: kPrimaryColor,
             ),
             SizedBox(height: size.height * 0.03),

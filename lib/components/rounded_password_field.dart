@@ -5,9 +5,11 @@ import '../constraints.dart';
 
 class RoundedPasswordField extends StatelessWidget {
   final ValueChanged<String> onChanged;
+  final TextEditingController textEditingController;
   const RoundedPasswordField({
     super.key, 
-    required this.onChanged,
+    required this.onChanged, 
+    required this.textEditingController,
   });
 
   @override

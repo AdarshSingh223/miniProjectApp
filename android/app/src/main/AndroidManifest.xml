@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.sexylogin">
    <application
-        android:label="sexylogin"
+        android:label="Mini Project App"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

@@ -12,6 +12,10 @@ import 'package:sexylogin/constraints.dart';
 import '../../../components/already_have_an_account_check.dart';
 
 class Body extends StatelessWidget {
+
+  TextEditingController _email = TextEditingController();
+  TextEditingController _password = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -32,11 +36,13 @@ class Body extends StatelessWidget {
                 height: size.height * 0.35,
               ),
               RoundedInputField(
-                hintText: "your email",
+                hintText: "Your Email",
                 onChanged: (value) {},
+                textEditingController: _email,
               ),
               RoundedPasswordField(
                 onChanged: (value) {},
+                textEditingController: _password,
               ),
               RoundedButton(
                 text: "signup",
