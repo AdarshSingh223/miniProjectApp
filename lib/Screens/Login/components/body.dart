@@ -71,7 +71,7 @@ class Body extends StatelessWidget {
               press: () {
                 Navigator.of(context).push(MaterialPageRoute(builder: (context) => signUpScreen()));
               }
-            )
+            ),
           ]
         ),
       ),

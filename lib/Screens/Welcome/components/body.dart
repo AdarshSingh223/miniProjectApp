@@ -7,6 +7,8 @@ import 'package:sexylogin/Screens/sign%20up/components/signup_screen.dart';
 import 'package:sexylogin/components/rounded_button.dart';
 import 'package:sexylogin/constraints.dart';
 
+import '../../DataPage/data_page.dart';
+
 class Body extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -74,13 +76,24 @@ class Body extends StatelessWidget {
                               )
                             ]
                           )
-
                         )
                       ],
                     ) 
                   )
                 ],
+              ),
+              TextButton(
+              onPressed: () {
+                Navigator.of(context).push(MaterialPageRoute(builder: (context) => DataPage()));
+              }, 
+              child: const Text(
+                'Continue without login',
+                style: TextStyle(
+                  color: kPrimaryColor,
+                  decoration: TextDecoration.underline
+                ),
               )
+            )
             ],
           ),
         ],

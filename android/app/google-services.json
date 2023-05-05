@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1028757515848",
+    "project_id": "miniprojectdatabase-12f1b",
+    "storage_bucket": "miniprojectdatabase-12f1b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1028757515848:android:2d18fb7ce345074110727d",
+        "android_client_info": {
+          "package_name": "com.example.sexylogin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1028757515848-ni5ie5tq85p04d1rr5d5h9fq2ic5s6rv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJ6oHJhJW1wVdsw5lLNu6OBz-3PylrscY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1028757515848-ni5ie5tq85p04d1rr5d5h9fq2ic5s6rv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
